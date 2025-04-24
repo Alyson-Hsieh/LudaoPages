@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ludao Hotel 周邊景點</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./navbar.css" />
+    <link rel="shortcut icon" href="./images/logo2.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="w-full sticky top-0 z-80 body-font">
+      <nav
+        class="max-w-7xl mx-auto flex justify-between items-center px-4 py-6"
+      >
+        <!-- logo -->
+        <a href="/" class="flex title-font font-medium items-end md:mb-0">
+          <h1 class="text-2xl tracking-wide cursor-pointer font-serif">Ludao Hotel</h1>
+        </a>
+        <!-- Menu / Close 按鈕 -->
+        <button
+          id="menuBtn"
+          class="text-2xl border-b-2 focus:outline-none cursor-pointer font-serif"
+        >
+          Menu
+        </button>
+      </nav>
+      <!-- 展開選單 -->
+      <div
+        id="menuPanel"
+        class="fade-slide menu-panel w-[100vw] h-auto sm:rounded-full custom-radial-bg sm:w-[60vw] absolute sm:right-5 z-40 p-12 text-center sm:h-[60vw] flex items-center justify-center"
+      >
+        <img
+          src="./images/Ludao_logo.png"
+          alt="logo"
+          class="mr-4 w-[40%] lg:w-[50%] hidden sm:block"
+        />
+
+        <ul class="space-y-8 text-lg text-stone-600 font-serif">
+          <li>
+            <a
+              href="./index.html"
+              class="menu-link hover:text-black text-xl hover:text-2xl sm:text-3xl sm:hover:text-4xl lg:text-4xl lg:hover:text-5xl hover:border-b-2"
+              >回到首頁</a
+            >
+          </li>
+          <li>
+            <a
+              href="./RoomInfo.html"
+              class="menu-link hover:text-black text-xl hover:text-2xl sm:text-3xl sm:hover:text-4xl lg:text-4xl lg:hover:text-5xl hover:border-b-2"
+              >客房介紹</a
+            >
+          </li>
+          <li>
+            <a
+              href="./Transportation.html"
+              class="menu-link hover:text-black text-xl hover:text-2xl sm:text-3xl sm:hover:text-4xl lg:text-4xl lg:hover:text-5xl hover:border-b-2"
+              >交通指引</a
+            >
+          </li>
+          <li>
+            <a
+              href="./ContactUs.html"
+              class="menu-link hover:text-black text-xl hover:text-2xl sm:text-3xl sm:hover:text-4xl lg:text-4xl lg:hover:text-5xl hover:border-b-2"
+              >聯絡我們</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- 遮罩 -->
+      <div id="overlay" class="overlay fixed inset-0 bg-black z-30"></div>
+    </header>
+    <main>
+      <section class="text-gray-600 body-font">
+        <p
+          class="text-center w-full pt-20 text-4xl font-medium title-font text-gray-900 tracking-widest font-serif font-semibold mb-4"
+        >
+          - 周邊景點 -
+        </p>
+        <p
+          class="text-center lg:w-2/3 mx-auto leading-relaxed text-2xl font-serif"
+        >
+          探索金門，漫遊閩南建築群的歲月記憶
+        </p>
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 lg:w-1/2">
+              <div
+                class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left"
+              >
+                <img
+                  alt="team"
+                  class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+                  src="./images/翟山坑道.jpg"
+                />
+                <div class="flex-grow sm:pl-8">
+                  <p class="title-font font-medium text-lg text-gray-900 mb-4">
+                    翟山坑道
+                  </p>
+                  <p class="mb-4">
+                    戰時開鑿的地下水道，結合自然潮汐與人工建設，昔日運兵重要據點，如今成為金門必訪的軍事景點。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/2">
+              <div
+                class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left"
+              >
+                <img
+                  alt="team"
+                  class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+                  src="./images/莒光樓.jpg"
+                />
+                <div class="flex-grow sm:pl-8">
+                  <p class="title-font font-medium text-lg text-gray-900 mb-4">
+                    莒光樓
+                  </p>
+                  <p class="mb-4">
+                    融合傳統與現代的建築風格，象徵忠勇精神，登高遠望可俯瞰金門港灣與市區景致，是金門代表性地標。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/2">
+              <div
+                class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left"
+              >
+                <img
+                  alt="team"
+                  class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+                  src="./images/金酒.jpg"
+                />
+                <div class="flex-grow sm:pl-8">
+                  <p class="title-font font-medium text-lg text-gray-900 mb-4">
+                    金門酒廠（高粱文化館）
+                  </p>
+                  <p class="mb-4">
+                    金門高粱酒發源地，館內展示釀酒技術與歷史故事，還能試飲高粱，深刻體驗金門的酒文化與風土。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/2">
+              <div
+                class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left"
+              >
+                <img
+                  alt="team"
+                  class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+                  src="./images/慈湖.jpg"
+                />
+                <div class="flex-grow sm:pl-8">
+                  <p class="title-font font-medium text-lg text-gray-900 mb-4">
+                    慈湖三角堡
+                  </p>
+                  <p class="mb-4">
+                    位於慈湖旁的觀景堡壘，曾為軍事瞭望哨，現成熱門打卡地，可欣賞海景與夕陽，是文青系旅人最愛。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/2">
+              <div
+                class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left"
+              >
+                <img
+                  alt="team"
+                  class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+                  src="./images/陽宅老街.jpg"
+                />
+                <div class="flex-grow sm:pl-8">
+                  <p class="title-font font-medium text-lg text-gray-900 mb-4">
+                    陽翟老街
+                  </p>
+                  <p class="mb-4">
+                    懷舊街道保留 60
+                    年代風貌，曾為電影《軍中樂園》拍攝地，街道氛圍獨特，是網美與影迷熱愛之地。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/2">
+              <div
+                class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left"
+              >
+                <img
+                  alt="team"
+                  class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+                  src="./images/八二三.jpg"
+                />
+                <div class="flex-grow sm:pl-8">
+                  <p class="title-font font-medium text-lg text-gray-900 mb-4">
+                    八二三戰史館
+                  </p>
+                  <p class="mb-4">
+                    紀念金門歷史上關鍵的 823
+                    砲戰，館內展出豐富戰役資料、武器與影像，是感受戰地歷史的重要據點。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/2">
+              <div
+                class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left"
+              >
+                <img
+                  alt="team"
+                  class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+                  src="./images/民俗文化村.jpg"
+                />
+                <div class="flex-grow sm:pl-8">
+                  <p class="title-font font-medium text-lg text-gray-900 mb-4">
+                    金門民俗文化村
+                  </p>
+                  <p class="mb-4">
+                    保存完整的古厝建築群，展示傳統婚禮、生活器物與民俗文化，是了解金門人文歷史的絕佳場域。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-4 lg:w-1/2">
+              <div
+                class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left"
+              >
+                <img
+                  alt="team"
+                  class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+                  src="./images/得月樓.jpg"
+                />
+                <div class="flex-grow sm:pl-8">
+                  <p class="title-font font-medium text-lg text-gray-900 mb-4">
+                    水頭聚落（得月樓）
+                  </p>
+                  <p class="mb-4">
+                    昔日僑民回鄉興建的洋樓群，保留閩南與西洋融合建築，漫步其中彷彿走進時光隧道。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/2">
+              <div
+                class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left"
+              >
+                <img
+                  alt="team"
+                  class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+                  src="./images/莒光樓.jpg"
+                />
+                <div class="flex-grow sm:pl-8">
+                  <p class="title-font font-medium text-lg text-gray-900 mb-4">
+                    莒光樓
+                  </p>
+                  <p class="mb-4">
+                    融合傳統與現代的建築風格，象徵忠勇精神，登高遠望可俯瞰金門港灣與市區景致，是金門代表性地標。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/2">
+              <div
+                class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left"
+              >
+                <img
+                  alt="team"
+                  class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+                  src="./images/金酒.jpg"
+                />
+                <div class="flex-grow sm:pl-8">
+                  <p class="title-font font-medium text-lg text-gray-900 mb-4">
+                    金門酒廠（高粱文化館）
+                  </p>
+                  <p class="mb-4">
+                    金門高粱酒發源地，館內展示釀酒技術與歷史故事，還能試飲高粱，深刻體驗金門的酒文化與風土。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/2">
+              <div
+                class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left"
+              >
+                <img
+                  alt="team"
+                  class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+                  src="./images/慈湖.jpg"
+                />
+                <div class="flex-grow sm:pl-8">
+                  <p class="title-font font-medium text-lg text-gray-900 mb-4">
+                    慈湖三角堡
+                  </p>
+                  <p class="mb-4">
+                    位於慈湖旁的觀景堡壘，曾為軍事瞭望哨，現成熱門打卡地，可欣賞海景與夕陽，是文青系旅人最愛。
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="p-4 lg:w-1/2">
+              <div
+                class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left"
+              >
+                <img
+                  alt="team"
+                  class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4"
+                  src="./images/陽宅老街.jpg"
+                />
+                <div class="flex-grow sm:pl-8">
+                  <p class="title-font font-medium text-lg text-gray-900 mb-4">
+                    陽翟老街
+                  </p>
+                  <p class="mb-4">
+                    懷舊街道保留 60
+                    年代風貌，曾為電影《軍中樂園》拍攝地，街道氛圍獨特，是網美與影迷熱愛之地。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="w-full sticky top-0 z-50">
+      <div class="max-w-8xl mx-auto flex justify-end items-center px-4 py-6">
+        <button id="backToTopBtn" class="back-to-top mt-4 font-serif" type="button">
+          Back to top
+        </button>
+      </div>
+    </footer>
+    <script src="./navbar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ludao Hotel 客房介紹</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./navbar.css" />
+    <link rel="shortcut icon" href="./images/logo2.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="w-full sticky top-0 z-80 body-font">
+      <nav
+        class="max-w-7xl mx-auto flex justify-between items-center px-4 py-6"
+      >
+        <!-- logo -->
+        <a href="/" class="flex title-font font-medium items-end md:mb-0">
+          <h1 class="text-2xl tracking-wide cursor-pointer font-serif">
+            Ludao Hotel
+          </h1>
+        </a>
+        <!-- Menu / Close 按鈕 -->
+        <button
+          id="menuBtn"
+          class="font-serif text-2xl border-b-2 focus:outline-none cursor-pointer"
+        >
+          Menu
+        </button>
+      </nav>
+      <!-- 展開選單 -->
+      <div
+        id="menuPanel"
+        class="fade-slide menu-panel w-[100vw] h-auto sm:rounded-full custom-radial-bg sm:w-[60vw] absolute sm:right-5 z-40 p-12 text-center sm:h-[60vw] flex items-center justify-center"
+      >
+        <img
+          src="./images/Ludao_logo.png"
+          alt="logo"
+          class="mr-4 w-[40%] lg:w-[50%] hidden sm:block"
+        />
+        <ul class="space-y-8 text-lg text-stone-600 font-serif">
+          <li>
+            <a
+              href="./index.html"
+              class="menu-link hover:text-black text-xl hover:text-2xl sm:text-3xl sm:hover:text-4xl lg:text-4xl lg:hover:text-5xl hover:border-b-2"
+              >回到首頁</a
+            >
+          </li>
+          <li>
+            <a
+              href="./Sights.html"
+              class="menu-link hover:text-black text-xl hover:text-2xl sm:text-3xl sm:hover:text-4xl lg:text-4xl lg:hover:text-5xl hover:border-b-2"
+              >周邊景點</a
+            >
+          </li>
+          <li>
+            <a
+              href="./Transportation.html"
+              class="menu-link hover:text-black text-xl hover:text-2xl sm:text-3xl sm:hover:text-4xl lg:text-4xl lg:hover:text-5xl hover:border-b-2"
+              >交通指引</a
+            >
+          </li>
+          <li>
+            <a
+              href="./ContactUs.html"
+              class="menu-link hover:text-black text-xl hover:text-2xl sm:text-3xl sm:hover:text-4xl lg:text-4xl lg:hover:text-5xl hover:border-b-2"
+              >聯絡我們</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- 遮罩 -->
+      <div id="overlay" class="overlay fixed inset-0 bg-black z-30"></div>
+    </header>
+    <main>
+      <p
+        class="text-center w-full pt-20 mb-20 text-4xl font-medium title-font text-gray-900 tracking-widest font-serif font-semibold"
+      >
+        - 客房介紹 -
+      </p>
+
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 pb-24 mx-auto">
+          <div class="flex flex-wrap justify-center -mx-4 -mb-10 text-center">
+            <div class="sm:w-1/2 mb-10 px-4">
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img
+                  src="./images/r-1.jpg"
+                  alt="r1"
+                  class="object-cover object-center h-full w-full"
+                />
+              </div>
+              <h2
+                class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3"
+              >
+                行政套房(一大床)
+              </h2>
+              <p class="leading-relaxed text-base">
+                定價$ 15800假日$ 5500平日$ 5000
+              </p>
+              <button
+                class="flex cursor-pointer mx-auto mt-6 text-white bg-amber-500 border-0 py-2 px-5 focus:outline-none hover:bg-amber-600 rounded"
+              >
+              <a href="./Room1.html">瞭解更多</a>
+              </button>
+            </div>
+            <div class="sm:w-1/2 mb-10 px-4">
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img
+                  src="./images/r-2.jpg"
+                  alt="r2"
+                  class="object-cover object-center h-full w-full"
+                />
+              </div>
+              <h2
+                class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3"
+              >
+                典雅客房(一大一小床)
+              </h2>
+              <p class="leading-relaxed text-base">
+                定價$ 10800假日$ 3800平日$ 3300
+              </p>
+              <button
+                class="flex cursor-pointer mx-auto mt-6 text-white bg-amber-500 border-0 py-2 px-5 focus:outline-none hover:bg-amber-600 rounded"
+              ><a href="./Room2.html">瞭解更多</a>
+                
+              </button>
+
+            </div>
+            <div class="sm:w-1/2 mb-10 px-4">
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img
+                  src="./images/r-3.jpg"
+                  alt="r3"
+                  class="object-cover object-center h-full w-full"
+                />
+              </div>
+              <h2
+                class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3"
+              >
+                精緻客房(兩小床)
+              </h2>
+              <p class="leading-relaxed text-base">
+                定價$ 6600假日$ 3300平日$ 2700
+              </p>
+              <button
+                class="flex cursor-pointer mx-auto mt-6 text-white bg-amber-500 border-0 py-2 px-5 focus:outline-none hover:bg-amber-600 rounded"
+              ><a href="./Room3.html">瞭解更多</a>
+                
+              </button>
+            </div>
+            <div class="sm:w-1/2 mb-10 px-4">
+              <div class="rounded-lg h-64 overflow-hidden">
+                <img
+                  src="./images/r-4.jpg"
+                  alt="r4"
+                  class="object-cover object-center h-full w-full"
+                />
+              </div>
+              <h2
+                class="title-font text-2xl font-medium text-gray-900 mt-6 mb-3"
+              >
+                精英客房(一大床)
+              </h2>
+              <p class="leading-relaxed text-base">
+                定價$ 7800假日$ 3300平日$ 2700
+              </p>
+              <button
+                class="flex cursor-pointer mx-auto mt-6 text-white bg-amber-500 border-0 py-2 px-5 focus:outline-none hover:bg-amber-600 rounded"
+              >
+                <a href="./Room4.html">瞭解更多</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="w-full sticky top-0 z-50">
+      <div class="max-w-8xl mx-auto flex justify-end items-center px-4 py-6">
+        <button
+          id="backToTopBtn"
+          class="back-to-top mt-4 font-serif"
+          type="button"
+        >
+          Back to top
+        </button>
+      </div>
+    </footer>
+    <script src="./navbar.js"></script>
+  </body>
+</html>

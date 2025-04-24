@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>金門陸島觀光酒店 Ludao Hotel</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./navbar.css" />
+    <link rel="shortcut icon" href="./images/logo2.ico" type="image/x-icon" />
+    <style>
+      .banner {
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+
+        position: relative;
+        background-attachment: fixed;
+      }
+      .banner-1 {
+        background-image: url(./images/i7.jpg);
+        opacity: 0.7;
+      }
+      .btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 15px 20px;
+        letter-spacing: 10px;
+        border-radius: 3px;
+        font-weight: 900;
+        color: black;
+      }
+      .pic {
+        overflow: hidden;
+      }
+      .pic img {
+        transform: scale(1, 1);
+        transition: all 0.5s ease-out;
+      }
+      .pic img:hover {
+        transform: scale(1.1, 1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="w-full sticky top-0 z-80 body-font">
+      <nav
+        class="max-w-7xl mx-auto flex justify-between items-center px-4 py-6"
+      >
+        <!-- logo -->
+        <a href="/" class="flex title-font font-medium items-end md:mb-0">
+          <h1 class="text-2xl tracking-wide cursor-pointer font-serif">
+            Ludao Hotel
+          </h1>
+        </a>
+        <!-- Menu / Close 按鈕 -->
+        <button
+          id="menuBtn"
+          class="font-serif text-2xl border-b-2 focus:outline-none cursor-pointer"
+        >
+          Menu
+        </button>
+      </nav>
+      <!-- 展開選單 -->
+      <div
+        id="menuPanel"
+        class="fade-slide menu-panel w-[100vw] h-auto sm:rounded-full custom-radial-bg sm:w-[60vw] absolute sm:right-5 z-40 p-12 text-center sm:h-[60vw] flex items-center justify-center"
+      >
+        <img
+          src="./images/Ludao_logo.png"
+          alt="logo"
+          class="mr-4 w-[40%] lg:w-[50%] hidden sm:block"
+        />
+        <ul class="space-y-8 text-lg text-stone-600 font-serif">
+          <li>
+            <a
+              href="./RoomInfo.html"
+              class="menu-link hover:text-black text-xl hover:text-2xl sm:text-3xl sm:hover:text-4xl lg:text-4xl lg:hover:text-5xl hover:border-b-2"
+              >客房介紹</a
+            >
+          </li>
+          <li>
+            <a
+              href="./Sights.html"
+              class="menu-link hover:text-black text-xl hover:text-2xl sm:text-3xl sm:hover:text-4xl lg:text-4xl lg:hover:text-5xl hover:border-b-2"
+              >周邊景點</a
+            >
+          </li>
+          <li>
+            <a
+              href="./Transportation.html"
+              class="menu-link hover:text-black text-xl hover:text-2xl sm:text-3xl sm:hover:text-4xl lg:text-4xl lg:hover:text-5xl hover:border-b-2"
+              >交通指引</a
+            >
+          </li>
+          <li>
+            <a
+              href="./ContactUs.html"
+              class="menu-link hover:text-black text-xl hover:text-2xl sm:text-3xl sm:hover:text-4xl lg:text-4xl lg:hover:text-5xl hover:border-b-2"
+              >聯絡我們</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- 遮罩 -->
+      <div id="overlay" class="overlay fixed inset-0 bg-black z-30"></div>
+    </header>
+
+    <main>
+      <div class="max-w-4xl mx-auto p-6 space-y-10 text-gray-800 font-serif">
+        <p class="text-2xl text-amber-900 sm:text-3xl font-bold">
+          精英客房(一大床)
+        </p>
+        <!-- 房價資訊 -->
+        <section>
+          <h2 class="text-2xl font-bold border-b pb-2 mb-4">房價資訊</h2>
+          <div
+            class="grid grid-cols-3 gap-4 text-center bg-gray-100 p-4 rounded-lg"
+          >
+            <div class="font-semibold">定價</div>
+            <div class="font-semibold">假日</div>
+            <div class="font-semibold">平日</div>
+            <div>7800元</div>
+            <div>3300元</div>
+            <div>2700元</div>
+          </div>
+        </section>
+
+        <!-- 客房資訊 -->
+        <section>
+          <h2 class="text-2xl font-bold border-b pb-2 mb-4">客房資訊</h2>
+          <ul class="space-y-2 list-disc pl-5">
+            <li>房型人數：2人（標準入住人數）</li>
+            <li>房間型式：套房</li>
+            <li>住宿包含：早餐</li>
+            <li>
+              客房設備：吹風機、電視、冰箱、冷氣、暖氣、無線網路、熱水壺、茶包
+            </li>
+          </ul>
+        </section>
+
+        <!-- 訂房說明 -->
+        <section>
+          <h2 class="text-2xl font-bold border-b pb-2 mb-4">訂房說明</h2>
+
+          <h3 class="text-xl font-semibold mt-6 mb-2">【平日、假日定義】</h3>
+          <ul class="list-disc pl-5 space-y-1">
+            <li>平日：星期日至星期四。</li>
+            <li>假日：星期五至星期六。</li>
+            <li>定價：農曆春節期間、跨年、國定假日、連續假日、特殊活動。</li>
+          </ul>
+
+          <h3 class="text-xl font-semibold mt-6 mb-2">【進退房時間】</h3>
+          <ul class="list-disc pl-5 space-y-1">
+            <li>進房時間：下午03:00以後。</li>
+            <li>退房時間：上午11:00以前。</li>
+          </ul>
+
+          <h3 class="text-xl font-semibold mt-6 mb-2">【訂房程序】</h3>
+          <ul class="list-disc pl-5 space-y-1">
+            <li>請事先來電確認或預約。</li>
+            <li>確認後請於3日內預付訂金（房價的30%），逾期視同取消。</li>
+            <li>匯款後請來電告知帳號後五碼以便確認。</li>
+            <li>收到訂金後為您保留房間，餘款到付。</li>
+            <li>訂房時間：早上09:00至下午17:30。</li>
+          </ul>
+
+          <h3 class="text-xl font-semibold mt-6 mb-2">
+            【匯款資訊－ATM轉帳/匯款】
+          </h3>
+          <ul class="list-disc pl-5 space-y-1">
+            <li>銀行代碼：</li>
+            <li>銀行帳號：</li>
+            <li>匯款銀行：</li>
+            <li>匯款戶名：</li>
+            <li>
+              ※匯款後請務必來電確認【電話：<a
+                href="tel:0911665175"
+                class="text-blue-600 underline"
+                >0911-665-175</a
+              >】。
+            </li>
+          </ul>
+
+          <h3 class="text-xl font-semibold mt-6 mb-2">【注意事項】</h3>
+          <ul class="list-disc pl-5 space-y-1">
+            <li>禁止攜帶寵物。</li>
+            <li>室內全面禁止酒、吸煙、嚼檳榔。</li>
+            <li>個人貴重物品請隨身攜帶並妥善保管，如有遺失恕不負責。</li>
+            <li>入住時請出示身分證件，並繳清餘款。</li>
+            <li>晚間10：00後請降低音量，勿大聲喧嘩。</li>
+            <li>請依房型人數進住，如需加人，請事先告知。</li>
+          </ul>
+
+          <h3 class="text-xl font-semibold mt-6 mb-2">【延期與退費說明】</h3>
+          <p class="mt-2">
+            匯款後若因故欲更改日期，退款方式依「個別旅客訂房定型化契約應記載及不得記載事項」辦理。
+            <br />
+            若您須要訂房或想進一步洽詢任何問題，請與「金門住宿‧陸島酒店」聯繫，
+            <strong
+              >電話：<a href="tel:0911665175" class="text-blue-600 underline"
+                >0911-665-175</a
+              ></strong
+            >。
+          </p>
+        </section>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="w-full sticky top-0 z-50">
+      <div class="max-w-8xl mx-auto flex justify-end items-center px-4 py-6">
+        <button
+          id="backToTopBtn"
+          class="back-to-top mt-4 font-serif"
+          type="button"
+        >
+          Back to top
+        </button>
+      </div>
+    </footer>
+    <script src="./navbar.js"></script>
+  </body>
+</html>

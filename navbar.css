@@ -1,0 +1,54 @@
+body {
+  background-color: #fafafa;
+  padding: 0 8px;
+}
+
+/* navbar */
+/* 遮罩 */
+.overlay {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.overlay.show {
+  opacity: 0.8;
+  pointer-events: auto;
+}
+
+.custom-radial-bg {
+  background: radial-gradient(circle at center, #ecc65d 10%, #e5e7eb 100%);
+}
+
+/* 面板 */
+.menu-panel {
+  opacity: 0;
+  transform: translateY(-20px) scale(0.9);
+  transition: all 0.8s ease;
+  pointer-events: none;
+}
+
+.menu-panel.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+/* footer */
+/* 按鈕樣式 */
+.back-to-top {
+  font-family: "serif";
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px solid;
+  transition: color 0.3s;
+}
+
+.back-to-top:hover {
+  color: #f59e0b; /* 這是 Tailwind 的 amber-700 顏色 */
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
